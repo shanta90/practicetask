@@ -14,3 +14,11 @@ function checkTemp (temp) {
 }
 console.log(checkTemp(38));
 
+function reverseNumber(num) {
+    let str = num.toString();
+    let reverse = str.split ("").reverse().join("");
+    return parseInt(reverse);
+}
+
+console.log(reverseNumber(12345));
+console.log(reverseNumber(7));
