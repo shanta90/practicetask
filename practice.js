@@ -22,3 +22,15 @@ function reverseNumber(num) {
 
 console.log(reverseNumber(12345));
 console.log(reverseNumber(7));
+
+function productOfDigits(num) {
+    let str = num.toString();
+    let product = 1;
+    for (let i = 0; i < str.length; i++) {
+        product *= parseInt(str[i]);
+    }
+    return product;
+}
+
+console.log(productOfDigits(123)); // 6
+console.log(productOfDigits(456)); // 120   
