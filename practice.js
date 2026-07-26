@@ -34,3 +34,12 @@ function productOfDigits(num) {
 
 console.log(productOfDigits(123)); // 6
 console.log(productOfDigits(456)); // 120   
+function getOddNumber (num) {
+    let arr = [];
+ for (let i = 1; i <= num; i++) {
+    if (i % 2 !== 0) {
+        arr.push(i);
+    }
+   return arr;
+ }
+ console.log(getOddNumber(10)); // [1, 3, 5, 7, 9]
