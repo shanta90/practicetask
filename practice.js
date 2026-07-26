@@ -63,3 +63,15 @@ function removeFirstAndLast (str){
 
 }
 console.log(removeFirstAndLast("hello"));
+function isPalindrome (str){
+    let reverseStr = str.split("").reverse().join("");
+    for(let i= 0;i<str.length;i++){
+    if (str[i]===reverseStr[i]){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+}
+console.log(isPalindrome("level"));
